@@ -1,6 +1,6 @@
 steps:
 - name: gcr.io/uber-container-tools/makisu:latest
-  args: ['build', '--load', '--modifyfs=true', '-t', 'eu.gcr.io/dnl-gcb-wbaa-dap-sbx/dap/gcp-makisu-poc:latest', '--redis-cache-addr=redis:6379 ' ,'--commit=explicit', '.']
+  args: ['build', '--load', '--modifyfs=true', '-t', 'eu.gcr.io/dnl-gcb-wbaa-dap-sbx/dap/gcp-makisu-poc:latest', '--redis-cache-addr=10.7.246.183:6379 ' ,'--commit=explicit', '.']
 
 # TODO: Instead of building with --load into the Docker daemon
 # then pushing, use --push=gcr.io which will push directly to the
